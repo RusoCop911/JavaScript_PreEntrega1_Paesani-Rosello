@@ -4,7 +4,7 @@ function validarDatos() {
 
     while (intentos < 3) {
 
-        cambio = prompt('Que desea convertir? \n (1 U$D = $500) \n (D) Dolares americanos a pesos argentinos \n (P) Pesos argentinos a dolares americanos').toUpperCase()
+        cambio = prompt('Qué desea convertir? \n (1 U$D = $500) \n (D) Dólares americanos a pesos argentinos \n (P) Pesos argentinos a dólares americanos').toUpperCase()
 
         if (cambio === "D") {
             cambioDolar()
@@ -17,14 +17,14 @@ function validarDatos() {
     }
 
     if (intentos === 3) {
-        alert('La "D" esta al lado de la "S" y la "P" esta pegada pegada a la "O", no es tan dificil')
+        alert('La "D" está junto a la "S" y la "P" está pegada a la "O", no es tan difícil')
         validarDatos()
     }
 }
 
 function cambioDolar() {
 
-    let dolar = Number(prompt('Ingrese la cantidad de dolares sin decimales o "0" para voler al menu'))
+    let dolar = Number(prompt('Ingrese la cantidad de dólares sin decimales o "0" para voler al menú'))
 
     if (isNaN(dolar)) {
         alert('ingrese cifra numerica')
@@ -39,7 +39,7 @@ function cambioDolar() {
 
 function cambioPesos() {
 
-    let pesos = Number(prompt('Ingrese la cantidad de pesos sin decimales o "0" para voler al menu'))
+    let pesos = Number(prompt('Ingrese la cantidad de pesos sin decimales o "0" para voler al menú'))
 
     if (isNaN(pesos)) {
         alert('ingrese cifra numerica')
